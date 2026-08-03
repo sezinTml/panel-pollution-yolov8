@@ -50,3 +50,22 @@ pip install ultralytics opencv-python picamera2
 
 # 3. Grant system site-packages access for libcamera integration
 sed -i 's/include-system-site-packages = false/include-system-site-packages = true/' ~/myenv/pyvenv.cfg
+
+
+## 🚀 How to Run / Çalıştırma
+
+1. Open terminal and navigate to project directory / Proje dizinine git:
+   ```bash
+   cd ~/İndirilenler  # Ya da kodlarının olduğu klasör
+2. Activate virtual environment / Sanal ortamı aktifleştir:
+   ```bash
+   source ~/myenv/bin/activate
+3. Run live inference script / Canlı tespit betiğini çalıştır:
+   ```bash
+   python live_yolo.py
+4. Press q on the display screen or Ctrl + C in terminal to exit.
+
+💻 Tech Stack
+
+Hardware: Raspberry Pi 4, Camera Module 3 (IMX708)
+Software & Libraries: Python 3, YOLOv8 (Ultralytics), OpenCV, Picamera2, libcamera, Roboflow, Google Colab
